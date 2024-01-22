@@ -50,8 +50,6 @@ class BackendController extends AbstractController
          *  - Der aktuelle User ('user') --> hier kannst du die Funktion 'getUser' verwenden welche von dieser Klasse bereitgestellt wird
          *  - 'generatedLink' --> aktuell noch ein leerer String
          */
-        return $this->render('/backend/index.html.twig', ['user' => $this->getUser(), 'generatedLink' => ""]);
-
     }
 
     /**
