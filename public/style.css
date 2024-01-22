@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+:root {
+    --color-primary-dark: 48,52,43;
+    --color-primary-darker: 31,37,29;
+    --color-primary-normal: 141, 162, 134;
+    --color-primary-light: 185,219,113;
+    --color-primary-lighter: 246,254,241;
+
+    --font-family-base: 'Poppins', sans-serif;
+    --font-bold: 700;
+    --font-light: 400;
+
+    --font-size-base: 18px;
+
+    --border-radius-button: 0px;
+}
+
+.bold {
+    font-weight: var(--font-bold);
+}
+
+.light {
+    font-weight: var(--font-light);
+}
+
+.color-primary-light {
+    color: #7BDBC4;
+}
+
+.color-primary-lighter {
+    color: #F2FEFB;
+}
+
+.color-primary-normal {
+    color: #88A29A;
+}
+
+.color-primary-dark {
+    color: #2C3434;
+}
+.color-primary-darker {
+    color: #1D2325;
+}
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-family-base);
+    font-weight: var(--font-bold);
+    color:#7BDBC4 ;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 32px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+
+p {
+    font-family: var(--font-family-base);
+    font-weight: var(--font-light);
+    color: #88A29A;
+    font-size: 18px;
+    line-height: 167%;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--font-family-base);
+    font-weight: var(--font-light);
+}
+
+.btn {
+    padding: 16px;
+    border-radius: var(--border-radius-button);
+    font-family: var(--font-family-base);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #7BDBC4;
+    
+}
+
+.backend p {
+    color: black;
+}
+
+.backend .c-linkCopied {
+    display: none;
+}
+
+.backend .active {
+    display: block;
+}

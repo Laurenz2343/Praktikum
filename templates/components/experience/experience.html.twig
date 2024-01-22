@@ -1,0 +1,65 @@
+{% block javascripts %}
+    <script>
+
+    </script>
+{% endblock %}
+{% block style %}
+    <style>
+        .experience {
+            background-color:#1D2325;
+            padding: 80px;
+            
+        }
+
+        .experience-element {
+            max-width: 1024px;
+            display: grid;
+            grid-gap: 60px;
+            
+        }
+
+        @media screen and (max-width: 1020px){
+            .experience {
+                padding: 32px;
+            }
+        }
+    </style>
+{% endblock %}
+{% block body %}
+
+        {% set experiences = [
+            {'headline': 'HDNET',
+            'content': '2024 habe ich in einer Werbe Agentur mein 2-wöchiges Schul-Praktikum im Bereich Webdesign abgeschlossen.',
+            'linkText': 'zur Website von HDNET',
+            'img': 'img/code.png'},
+         
+            {'headline': 'Englandaustausch',
+            'content': 'In der Klasse 9 bin ich mit einem Schulaustausch nach England geflogen und war dort 1 Woche lang in einer gast Familie.',
+            'img': 'img/english.png'},
+            
+            {'headline': 'Bielefeld United',
+            'content': 'In den ersten Wochen der Sommerferien und in der ersten Woche der Herbdtferien 2023 habe ich die Ferienspiele  von Bielefeld United  mit begleitet mit Kindern mit Prekerem Hintergrund',
+            'img': 'img/BIU.png'},
+            
+            {'headline': 'Dr. Oektker',
+            'content': ' In der zweiten woche der  Herbstferien 2023, habe ich eine 4 Tägiges freiwilliges Prktikum bei Dr. Oetker gemacht . Dort habe ich Dr. Oetker neher kennengelernt und gelern wie man mit einem Löt Kolben umgeht. ',
+            'img': 'img/Dr. Oetker.png'},
+
+            {'headline': 'Gärtnerei Eckertsheim',
+            'content': ' In der Gärtnerei Eckertsheim Habe ich ein ein-Wöchiges  Schul-Praktikum  gemacht, wo ich viel über einerseits Pflanzen aber such über den umgang mit Menschen mit behinderung gelernt habe. ',
+            'img': 'img/Gärtnerei.png'},
+
+            {'headline': 'Kanzlei',
+            'content': ' Als Schul-praktikum habe ich 2023 in der Kanzlei Streitbörger ein prsktikum gemscht. Dort habe ich die arbeit als Notar kennengelernt. Ausserdem war ich auch im Landgericht in einem Prozess dabei.',
+            'img': 'img/kanzlei 1.png'},
+
+        ] %}
+    <section id="experience" class="experience">
+        <h2 class= "uppercase">Erfahrung</h2>
+        <div class="experience-element ">
+            {% for item in experiences %}
+                {% include 'components/experience/experience-content.html.twig' %}
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

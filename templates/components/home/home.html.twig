@@ -1,0 +1,59 @@
+{% block style %}
+    <style>
+        .home {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .home-element {
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            padding-top: 10%;
+            
+        }
+
+        .element-text {
+
+        }
+
+        .social-media {
+
+        }
+
+        .social-media--a {
+
+        }
+
+        .download {
+
+        }
+
+        @media screen and (max-width: 1020px) {
+            .site-content {
+
+            }
+        }
+        @media screen and (max-width: 1360px) {
+            .site-content {
+
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <section id="home" class="home">
+        <div class="home-element">
+        <h1 style="color:#7BDBC4"> Laurenz&nbsp</h1>
+        <h1 style="color:#7BDBC4"> Bremke </h1>
+            {% if showDownloadButton %}
+                <a href="{{ path('downloadCv', {'hash': hash}) }}" target="_blank"><button type="button" class="download btn btn-primary bold">Bewerbung herunterladen</button></a>
+            {% endif %}
+            <div class="social-media">
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

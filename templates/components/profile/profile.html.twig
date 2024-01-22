@@ -1,0 +1,90 @@
+{% block javascripts %}
+    <script>
+
+    </script>
+{% endblock %}
+{% block style %}
+    <style>
+        #plant-profile {
+
+            padding: 150px 32px;
+            color: white;
+            background-color:#2C3434;
+        }
+
+        .infogroup {
+            display: block;
+            margin-bottom: 32px ;
+            margin-top:130px;
+        }
+        .profile-label { 
+            color: #7BDBC4;
+            font-size: 17px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-left: -1%;
+            flex-direction: column;
+            margin-top: 40px;
+        }
+        
+        @media screen and (max-width: 1360px){
+        .infogroup {
+           display: none;
+         }
+        }
+        .daten-label {
+            color: white;
+            font-size: 19px;
+            font-weight:400;
+            flex-direction: column;
+            margin-top: 2px;
+
+        }
+        
+        
+        
+    </style>
+{% endblock %}
+{% block body %}
+<div id="plant-profile">
+    
+    
+    <div class="infogroup">
+     <p class="profile-label">
+     NAME
+     </p>
+     <p class= "daten-label">
+     Laurenz Bremke
+     </p>
+     
+     <p class="profile-label">
+     SCHULE
+     </p>
+     <p class= "daten-label">
+     FVB Gymnasium
+     </p>
+     <p class="profile-label">
+     EMAIL
+     </p>
+     <p class= "daten-label">
+     laurenz.bremke <br> @fvbschulen.eu
+     </p>
+     <p class= "profile-label">
+     TELEFON
+     </p>
+     <p class= "daten-label">
+     0178 6344 795
+     </p>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     </div>
+
+</div>
+{% endblock %}
